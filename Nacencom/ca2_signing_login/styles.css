@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+
+.login_page {
+    display: flex;
+    height: 100vh;
+    margin: 0px;
+}
+
+/* ================================================================= *
+ * Intro Side
+ * ================================================================= */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0055e6;
+    margin: 0px;
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+}
+
+.intro__header {
+    text-align: left;
+    margin: 15px;
+    color: white;
+    font-size: 40px;
+}
+
+.intro__paragraph {
+    text-align: left;
+    margin: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.intro__logo {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.intro__logo > a {
+    margin: 10px;
+}
+
+/* ================================================================= *
+ * Login Side
+ * ================================================================= */
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 100%;
+    width: 50%;
+}
+
+.login__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.login__header {
+    margin: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.login__form {
+    align-items: left;
+}
+
+.login__username {
+    position: relative;
+}
+
+.login__username > label {
+    font-size: 13px;
+}
+
+.login__username > input {
+    margin: 5px 0px 30px 0px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+.login__username > input:hover {
+    border: 1px solid #4371c2;
+}
+
+.login__username > input:focus {
+    border: 1px solid #4371c2;
+}
+
+.login__username__empty {
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    bottom: 7px;
+}
+
+.login__username__invalid {
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    bottom: 7px;
+}
+
+.login__password {
+    position: relative;
+}
+
+.login__password > label {
+    font-size: 13px;
+}
+
+.login__password > input {
+    margin: 5px 0px 30px 0px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+.login__password > input:hover {
+    border: 1px solid #4371c2;
+}
+
+.login__password > input:focus {
+    border: 1px solid #4371c2;
+}
+
+.login__password__hide {
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    bottom: 37px;
+    color: #8c8c8c;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login__password__hide:hover {
+    color: #d3d3d3;
+}
+
+.login__password__show {
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    bottom: 37px;
+    color: #8c8c8c;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login__password__show:hover {
+    color: lightgray;
+}
+
+.login__password__empty {
+    position: absolute;
+    color: red;
+    bottom: 8px;
+    font-size: 14px;
+}
+
+.login__button {
+    background-color: #0055e6;
+    margin: 10px 0px 10px 0px;
+    width: 350px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #0055e6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login__button:hover {
+    background-color: #3b76dc;
+}
+
+.login__forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.login__forgot > a {
+    color: #0055e6;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.login__forgot > a:hover {
+    color: #3c7dec;
+}
+
+.login__divider {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.login__divider > p {
+    text-align: center;
+}
+
+.login__divider > p::before {
+    position: relative;
+    top: 50%;
+    right: 70%;
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    background-color: #f0f0f0;
+}
+
+.login__divider > p::after {
+    position: relative;
+    left: 70%;
+    bottom: 50%;
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    background-color: #f0f0f0;
+}
+
+.login__google {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.login__google > button > img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.login__google > button {
+    position: relative;
+    background-color: white;
+    margin: 10px 0px 10px 0px;
+    width: 350px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login__google > button:hover {
+    border: 1px solid #3b76dc;
+    color: #3b76dc;
+}
+
+.login__signup {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 10px;
+}
+
+.login__signup > p {
+    margin-right: 10px;
+}
+
+.login__signup > a {
+    color: #0055e6;
+    text-decoration: none;
+}
+
+.login__other {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 10px;
+}
+
+.login__other > a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.login__other > a > img {
+    margin-right: 5px;
+}
